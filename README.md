@@ -10,7 +10,6 @@ Lab Experiments / Solution of System Software (KTU CSE S5)  <br>
 
 
 
-```
 
 ## Getting Started
 
