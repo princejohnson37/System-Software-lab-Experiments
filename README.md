@@ -15,7 +15,7 @@ Lab Experiments / Solution of System Software (KTU CSE S5)  <br>
 
 Clone this repo
 ```
-$ git clone 
+$ git clone https://github.com/princejohnson37/System-Software-lab-Experiments.git
 ```
 Switch to the program folder
 ```
