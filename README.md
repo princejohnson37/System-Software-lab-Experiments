@@ -5,7 +5,9 @@ Lab Experiments / Solution of System Software (KTU CSE S5)  <br>
 1.Single Level File Organisation<br>
 2.Two Level File Organisation <br>
 3.Banker's Algorithm <br>
-4.Disk Scheduling Algorithms- FCFS, SCAN and C-SCAN
+4.Disk Scheduling Algorithms- FCFS, SCAN and C-SCAN <br>
+5.Symbol Table <br>
+
 
 
 
