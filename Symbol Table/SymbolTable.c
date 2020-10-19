@@ -4,7 +4,7 @@
 #include<ctype.h>
 #include<stdbool.h>
 
-int index;
+int index = 0;
 struct SymbolTable{
     char symbol[20];
     char address[20];
@@ -34,7 +34,6 @@ static int max = 100;
 
 void main(){
     int ch,inp,location;
-    index=0;
     char temp[20],yon;
     while(1){
         printf("\n");
