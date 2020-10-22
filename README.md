@@ -31,3 +31,5 @@ To Execute
 ``` 
 $ ./a.out
 ```
+
+Alternativly you can use CodeBlocks IDE, which is I used to create these programs
