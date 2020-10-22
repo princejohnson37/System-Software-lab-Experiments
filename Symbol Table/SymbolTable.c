@@ -4,18 +4,18 @@
 #include<ctype.h>
 #include<stdbool.h>
 
-int index = 0;
+
 struct SymbolTable{
     char symbol[20];
     char address[20];
     }s[100];
 
-int search(char x[20]){
+int search(char x[20], int size){
     bool found =false;
     char symbol[20];
     char address[20];
     int notFound = 404;
-    for(int i = 1; i <= index; i++){
+    for(int i = 1; i <= size; i++){
             strcpy(address,s[i].address);
             strcpy(symbol,s[i].symbol);
 
@@ -34,14 +34,11 @@ static int max = 100;
 
 void main(){
     int ch,inp,location;
+    int index = 0;
     char temp[20],yon;
     while(1){
         printf("\n");
-        printf("1: Insert Symbol and Address\n"
-               "2: Modify Symbol or Address\n"
-               "3: Search Symbol or Addess\n"
-               "4: Display Symbol Table\n"
-               "0: Exit\n");
+        printf("1: Insert Symbol and Address\n2: Modify Symbol or Address\n3: Search Symbol or Addess\n4: Display Symbol Table\n0: Exit\n");
         printf("\nChoose Option: ");
         scanf("%d",&ch);
         switch(ch){
@@ -61,7 +58,7 @@ void main(){
             case 2: //Modify
                 printf("\nEnter Symbol or Address to modify: ");
                 scanf("%s",&temp);
-                location = search(temp);
+                location = search(temp,index);
                 if(location == 404){
                     printf("\nSymbol or Address not found...\n");
                 }
@@ -110,7 +107,7 @@ void main(){
             case 3: //Search
                 printf("\nEnter the Symbol or Address to search in the Symbol table : ");
                 scanf("%s",&temp);
-                location = search(temp);
+                location = search(temp,index);
                 if(location == 404 ){
                     printf("\nSymbol or Address not found...\n");
                 }
@@ -136,6 +133,7 @@ void main(){
                 break;
            default :
                printf("\nWrong Choice... Try Again or Enter 0 for terminating the program\n");
+               index = 0;
                main();
                 break;
             }
